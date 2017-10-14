@@ -77,7 +77,7 @@ function removeFromCart(item) {
       var newcart = cart.splice(i,1);
     }
   }
-  if (typeof newcart !== 'undefined') {
+  if (typeof newcart == undefined) {
     console.log(`That item is not in your cart.`)
   }
 }
