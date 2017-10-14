@@ -72,9 +72,8 @@ function total() {
 
 function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++ ) {
-    var check = Object.keys(cart[i])  // Returns an array of keys
-    var checkstring = check.shift() //Returns a string of the first element
-    if (checkstring.hasOwnProperty(item)){
+    var check = cart[i]  
+    if (check.hasOwnProperty(item)){
       cart = cart.splice(i,1);
     } else {
       console.log(`That item is not in your cart.`)
