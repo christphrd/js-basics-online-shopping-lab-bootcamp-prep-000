@@ -71,16 +71,15 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var cartsizebefore = cart.length
   for (var i = 0; i < cart.length; i++ ) {
     var check = cart[i]
     if (check.hasOwnProperty(item)){
       var newcart = cart.splice(i,1);
     }
   }
-  if (newcart.length === cartsizebefore) {
+  if () {
     console.log(`That item is not in your cart.`)
-  } 
+  }
 }
 
 function placeOrder(cardNumber) {
