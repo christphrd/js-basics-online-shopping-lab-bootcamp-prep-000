@@ -74,12 +74,10 @@ function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++ ) {
     var check = cart[i]
     if (check.hasOwnProperty(item)){
-      cart = cart.splice(i,1);
-    } else {
-      console.log(`That item is not in your cart.`)
-    }
+      newcart = cart.splice(i,1);
+    } 
   }
-  return cart
+  return newcart
 }
 
 function placeOrder(cardNumber) {
