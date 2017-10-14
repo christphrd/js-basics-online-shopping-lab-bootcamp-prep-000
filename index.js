@@ -77,8 +77,12 @@ function removeFromCart(item) {
       var newcart = cart.splice(i,1);
     }
   }
-  return newcart
-}
+  if (newcart === cart) {
+    console.log(`That item is not in your cart.`)
+  } else {
+    return newcart
+  }
+} 
 
 function placeOrder(cardNumber) {
   if (cardNumber == null) {
