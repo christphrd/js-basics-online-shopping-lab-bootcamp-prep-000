@@ -82,7 +82,7 @@ function removeFromCart(item) {
   } else {
     return newcart
   }
-} 
+}
 
 function placeOrder(cardNumber) {
   if (cardNumber == null) {
